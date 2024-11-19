@@ -1,0 +1,490 @@
+/* Genel Stiller */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Ana içerik alanı */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* İçeriği ortalar */
+  align-items: center; /* İçeriği yatayda ortalar */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer her zaman en altta */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f8f8f8;
+}
+
+h1,
+h2 {
+  color: #444;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+  background: #e67e22;
+  color: #fff;
+}
+
+/* Hero Bölümü */
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  background: #e67e22;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+  background: #d35400;
+}
+
+/* About Bölümü */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f7f7f7;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Popüler Ürünler */
+.popular-products {
+  padding: 40px 20px;
+}
+
+.popular-products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Popüler Ürünler */
+.popular-products {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.popular-products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(400px, 1fr)
+  ); /* Kartlar daha geniş */
+  gap: 30px; /* Kartlar arasında daha fazla boşluk */
+}
+
+.product-card {
+  text-align: center;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px; /* Kart görsel alanı daha büyük */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h4 {
+  font-size: 1.6em;
+  margin: 15px 0 5px;
+  color: #2c3e50;
+}
+
+.product-card p {
+  font-size: 1.3em;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* Müşteri Yorumları */
+.testimonials {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(500px, 1fr)
+  ); /* Kart genişliği artırıldı */
+  gap: 30px; /* Kartlar arasında daha fazla boşluk */
+}
+
+.testimonial {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.testimonial h4 {
+  font-size: 1.4em;
+  color: #e67e22;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Sayfa İçi Kutular */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main .box {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+main .box:hover {
+  transform: translateY(-10px);
+}
+
+/* Resim Galerisi */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container {
+  width: 100%;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.menu-category h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e67e22;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Menü Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Menü Öğesi */
+.menu-item {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-bottom: 10px;
+  overflow: hidden; /* Taşan resimleri kesmek için */
+}
+
+.menu-item img {
+  width: 100%; /* Kartın genişliğine uyacak şekilde */
+  height: 200px; /* Kartın resim kısmına uygun yükseklik */
+  object-fit: cover; /* Resmin orantısını koruyarak alanı doldurur */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.menu-item h4 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.menu-item p {
+  font-size: 1.2em;
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hakkımızda Sayfası */
+.about-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); /* Blur efekti */
+  z-index: 1;
+}
+
+.about-page .content-box {
+  position: relative;
+  z-index: 2; /* Overlay'nin üstünde gösterilir */
+  background: rgba(255, 255, 255, 0.85); /* Yarı saydam beyaz arka plan */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-page h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.about-page h3 {
+  font-size: 1.8em;
+  color: #e67e22;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* İletişim Sayfası */
+.contact-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  position: relative;
+}
+
+.contact-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact-info,
+.contact-form {
+  position: relative;
+  z-index: 2;
+  width: 48%;
+  background: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz arka plan */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #555;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  border-color: #e67e22;
+  box-shadow: 0 4px 8px rgba(230, 126, 34, 0.2);
+}
+
+.contact-form form button {
+  width: 100%;
+  background: #e67e22;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form form button:hover {
+  background: #d35400;
+}
